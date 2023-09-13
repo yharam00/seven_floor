@@ -13,7 +13,10 @@ require('lib/print.html')
             <?php print_contents(); ?>
         </ol>
         <a href="create.html">create</a>
-        <h2><?php print_title(); ?></h2>
-        <?php print_discription(); ?>
+        <form action="create_process.html" method="post">
+            <p><input type="text" name="title" placeholder="이름"></p>
+            <p><textarea name="description" placeholder="한마디"></textarea></P>
+            <p><input type="submit"></p>
+        </form>
     </body>
 </html>
